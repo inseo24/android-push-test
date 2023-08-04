@@ -1,0 +1,11 @@
+- 안드로이드 FCM Push Test
+  - 사전 작업
+    - `google-service.json` 파일, Firebase Console에서 안드로이드 프로젝트 생성 후 다운로드 받을 수 있음
+      - 현재 등록된 파일은 `google-service.json` 파일이 비어 있음~.~ 
+    - package name 설정
+    - 서버에서 전송할 것임으로 Console > 프로젝트 설정 > Cloud Messaging 탭에 들어가면, 최초 생성 프로젝트는 V1이 disable되어 있음, 옆에 : 버튼을 클릭해서 활성화 필요. 활성화된 V1 서버 키로 전송함
+  - 구현된 코드
+    - 토큰 발급
+    - 푸시 메시지 수신 코드
+  - 테스트 흐름
+    - 서버에서 해당 config를 이용해 요청을 보냈을 시 제대로 안드로이드 프로젝트에서 푸시 알림이 수신되면 ㅇㅋ
